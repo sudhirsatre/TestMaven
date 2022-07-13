@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<parameter name="uid" value="mngr410625"></parameter>
+	<parameter name="pass" value="UqabYrE"></parameter>
+
+	<parameter name="inuid" value="mngr410544855"></parameter>
+	<parameter name="valpass" value="UqabYrE"></parameter>
+
+	<parameter name="validuid" value="mngr410625"></parameter>
+	<parameter name="invapass" value="UqabYrEuuiyhyiuydsf"></parameter>
+
+	<parameter name="ini" value="mngr4106259921"></parameter>
+	<parameter name="inp" value="UqabYrEghtfhtr"></parameter>
+
+
+	<test name="validusevalpass">
+		<classes>
+			<class name="guruextentreport.ValidLogin" />
+		</classes>
+	</test>
+
+	<test name="iinvalidusevalpass">
+		<classes>
+			<class name="guruextentreport.InvalidUserIdValidPassword" />
+		</classes>
+	</test>
+
+	<test name="validuseinvalpass">
+		<classes>
+			<class name="guruextentreport.ValidUserIDInvalidPassword" />
+		</classes>
+	</test>
+
+	<test name="invaliduseinvalpass">
+		<classes>
+			<class name="guruextentreport.InvalidUserIdInvalidPassword" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
